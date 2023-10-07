@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -14,10 +13,13 @@ import Event from './component/Event/Event.jsx';
 import Login from './pages/Login/Login.jsx';
 import Register from './pages/Register/Register.jsx';
 import AuthProvider from './provider/AuthProvider.jsx';
+import PrivateRoute from './pages/privateRoute/PrivateRoute.jsx';
+import ErrorElement from './pages/Errorpage/ErrorElement';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorElement></ErrorElement>,
     children: [
       {
         path: '/',
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
          path: "/categore/:ID",
-         element: <Service></Service>,
+         element:  <PrivateRoute><Service></Service></PrivateRoute> ,
          loader: ()=> fetch('/data.json')
       },
       {

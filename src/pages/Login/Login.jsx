@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from '../socialLogin/SocialLogin';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
 
     const {loginUser} = useContext(AuthContext)
+    const location = useLocation();
+    const navigate = useNavigate()
 
     const handleLogin = e =>{
         e.preventDefault()
@@ -16,6 +18,9 @@ const Login = () => {
         loginUser(email,password)
         .then(res => {
             toast.success('Successfully Loggedin!')
+
+            navigate(location?.state ? location.state : '/')
+
         })
         .catch(err =>{
             toast.error("Invalid email or password")
