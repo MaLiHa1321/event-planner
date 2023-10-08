@@ -7,7 +7,7 @@ const Categories = ({categore}) => {
         <div>
             
  <div className="card card-side flex flex-col lg:flex-row bg-base-100 shadow-2xl mt-12">
-  <figure><img src={Image} className='w-[300px] h-[300px]' alt="Movie"/></figure>
+  <figure><img src={Image} className='w-[250px] h-[200px] p-3 rounded-xl' alt="Movie"/></figure>
   <div className="card-body">
     <h2 className="card-title text-2xl">{Category}</h2>
     <p>{ShortDescription}</p>
