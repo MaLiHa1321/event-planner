@@ -70,8 +70,10 @@ const Login = () => {
 
          
       </form>
+       <div className='p-4'>
 
      <SocialLogin></SocialLogin>
+       </div>
     </div>
   </div>
 </div>

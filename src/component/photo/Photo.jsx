@@ -3,6 +3,7 @@ import React from 'react';
 const Photo = () => {
     return (
         <div className='mt-12'>
+            <h3 className='text-center text-pink-900 text-4xl font-bold m-12'>Gallery</h3>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                

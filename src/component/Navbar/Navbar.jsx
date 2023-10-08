@@ -13,16 +13,19 @@ const Navbar = () => {
       <NavLink className="mr-3 text-xl" to="/event" >Event</NavLink>
       <NavLink className="mr-3 text-xl" to="/categore" >Services</NavLink>
       <NavLink className="mr-3 text-xl" to="/about" >About us</NavLink>
-      <NavLink className="mr-3 text-xl" to="/login" >Login</NavLink>
-      <NavLink className="mr-3 text-xl" to="/register" >Register</NavLink>
-      {
+
+        {
         user &&  <div>
-             <NavLink className="mr-3 text-xl" to="/gallary" >Gallery</NavLink>
+             <NavLink className="mr-3 text-xl" to="/vanue" >Venue</NavLink>
+             <NavLink className="mr-3 text-xl" to="/menu" >Menu</NavLink>
         </div>
       
       
         
       }
+      <NavLink className="mr-3 text-xl" to="/login" >Login</NavLink>
+      <NavLink className="mr-3 text-xl" to="/register" >Register</NavLink>
+    
 
 
     </>

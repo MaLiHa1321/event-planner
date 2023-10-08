@@ -11,7 +11,7 @@ const Banner = () => {
       <h1 className="mb-5 text-2xl lg:text-4xl font-bold text-white">Celebrate your special day into an extraordinary celebration with us</h1>
       <p className="mb-5 text-white">We have a vast network of trusted vendors and partners, ensuring you have access to the best in the industry, 
       from florists and caterers to photographers and entertainers.</p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn btn-primary text-white">Get Started</button>
     </div>
   </div>
 </div>

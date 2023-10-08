@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div className="text-xl">
+        <div className="container w-10/12 mx-auto text-base lg:text-xl">
          <h2 className="text-3xl text-center font-bold m-12">About us</h2>
          <p className="text-xl">Welcome to Event.planner, your trusted partner in crafting unforgettable events and creating lasting memories.</p>
             <h2 className="flex justify-start text-2xl font-bold m-8">Our Story</h2>
