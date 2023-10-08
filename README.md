@@ -10,3 +10,8 @@ My website based on Event management system.
 - user can buy the pakage for their occasion
 - user can see our event 
 - user can see our venus and menus we provided.
+
+
+# Live link
+
+https://event-planner-3931c.web.app
