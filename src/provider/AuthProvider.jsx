@@ -8,7 +8,7 @@ export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
     const [user,setUser] = useState(null)
-    const [loading,setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
 
     const googleProvider = new GoogleAuthProvider
 
@@ -29,7 +29,7 @@ const AuthProvider = ({children}) => {
 
     // onauthState
     useEffect(()=>{
-        onAuthStateChanged(auth, (currentUser) =>{
+      return onAuthStateChanged(auth, (currentUser) =>{
             setUser(currentUser)
             setLoading(false)
         })
@@ -70,11 +70,12 @@ const AuthProvider = ({children}) => {
     const info ={
         createUser,
         loginUser,
+        loading,
         logout,
         user,
         googleLogin,
         handleUpdateprofile,
-        loading
+      
     }
     return (
         <AuthContext.Provider value={info}>
