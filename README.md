@@ -1,7 +1,7 @@
-# Project overview
 
 
-My website based on Event management system. 
+
+Welcome to the Event Management System repository! This system is designed to streamline and enhance the process of organizing and managing events, making event planning a seamless experience.
 
 ## my website fetures are given below:
 
