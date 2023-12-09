@@ -11,6 +11,13 @@ Welcome to the Event Management System repository! This system is designed to st
 - user can see our event 
 - user can see our venus and menus we provided.
 
+# Technology I have used 
+- javascript
+- react js
+- tailwind
+- daisyui
+- express js
+- mongodb
 
 # Live link
 
